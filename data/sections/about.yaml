@@ -1,0 +1,125 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Graduate Student 
+# your company information
+company:
+  name: Virginia Tech
+  url: "https://www.vt.edu/"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "files/vikrant-bhati.pdf"
+
+# a summary about you
+summary: "I am a Master’s student in Computer Engineering at Virginia Tech, expected to graduate in May 2026, 
+with over six years of professional software development experience. 
+My background spans backend systems, scalable cloud solutions, AI-driven applications, and working with FPGA-based embedded systems. \n
+
+During my graduate studies, 
+I have worked on a range of projects that combine my software engineering experience with advanced machine learning techniques. 
+These include a comprehensive study of CNN architectures (ResNet18 variants with attention mechanisms and ODConv) on ImageNet and Pascal VOC datasets, 
+optimizing large language models using Generalized Reward Policy Optimization (GRPO) with Chain-of-Thought reasoning on medical datasets, 
+leading to measurable performance improvements, and developing generative AI solutions like anime image generation using GANs. 
+I have also built computer vision applications such as a gesture-controlled game using MediaPipe and OpenCV. \n
+
+I am currently a Co-op Software Developer at Viavi Solutions (JDSU), 
+where I develop high-performance C++ software for FPGA-based embedded systems that enable real-time data acquisition and 
+processing for advanced network testing. Before starting my master’s, 
+I spent six years at Fiserv, where I worked on designing and building large-scale distributed systems, 
+developing compliance and inventory management microservices, 
+delivering full-stack financial solutions like Card Free Cash, and leading engineering teams. \n
+
+I work with Python, Java, C++, and SQL, and have hands-on experience with cloud platforms including GCP, AWS, and Azure, 
+as well as frameworks like TensorFlow, PyTorch, and Spring Boot. 
+I have trained and mentored engineers, initiated high-impact technical projects, and won multiple global hackathons. 
+My goal is to leverage my combined expertise in system-level engineering and AI to deliver innovative, 
+scalable, and impactful solutions." 
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "bhati.vikrant@outlook.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/vikrant-bhati"
+
+# - name: Stackoverflow
+#   icon: "fab fa-stack-overflow"
+#   url: "#"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/vikrantbhati/"
+
+# - name: Twitter
+#   icon: "fab fa-twitter"
+#   url: "#"
+
+# - name: Facebook
+#   icon: "fab fa-facebook"
+#   url: "#"
+
+# Show your badges
+# You can show your verifiable certificates from https://www.credly.com.
+# You can also show a circular bar indicating the level of expertise on a certain skill
+badges:
+# - type: certification
+#   name: Certified Kubernetes Security Specialist
+#   url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
+#   badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
+
+# - type: certification
+#   name: Istio and IBM Cloud Kubernetes Service
+#   url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
+#   badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
+
+# - type: certification
+#   name: Artificial Intelligence and Machine Learning
+#   url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
+#   badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
+
+# - type: soft-skill-indicator
+#   name: Java
+#   percentage: 100
+#   color: blue
+
+# - type: soft-skill-indicator
+#   name: C++
+#   percentage: 90
+#   color: blue
+
+# - type: soft-skill-indicator
+#   name: python
+#   percentage: 85
+#   color: blue
+
+# - type: soft-skill-indicator
+#   name: Leadership
+#   percentage: 85
+#   color: blue
+
+# - type: soft-skill-indicator
+#   name: Team Work
+#   percentage: 90
+#   color: yellow
+
+# - type: soft-skill-indicator
+#   name: Hard Working
+#   percentage: 85
+#   color: orange
+
+# you can also provide color code instead of the color name
+# - type: soft-skill-indicator
+#   name: Example 1
+#   percentage: 75
+#   color: "#00adb5"

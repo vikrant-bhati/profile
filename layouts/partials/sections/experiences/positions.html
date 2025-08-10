@@ -32,7 +32,8 @@
             <h5 class="designation">{{ $position.designation }}</h5>
             <p class="text-muted">{{ $position.start }} - {{if $position.end }} {{ $position.end }} {{else}} {{ i18n "present" }} {{end}}</p>
         </div>
-        <!-- Add the responsibilities handled at this position -->
+
+        <!-- Responsibilities -->
         {{ if $position.responsibilities }}
             <h6 class="text-heading">{{ i18n "responsibilities" }}</h6>
             <ul class="justify-content-around">
@@ -41,6 +42,25 @@
                 {{ end }}
             </ul>
         {{ end }}
+
+        <!-- Technologies (new) -->
+        <!-- {{ with $position.technologies }}
+            <h6 class="text-heading">Technologies</h6>
+            <ul class="justify-content-around">
+                {{ range $position.technologies }}
+                    <li>{{ . | markdownify }}</li>
+                {{ end }}
+                 {{ range . }}
+                    <span class="badge badge-secondary mr-1 mb-1">{{ . }}</span>
+                {{ end }} 
+           </ul>
+        {{ end }} -->
+
+        {{ with $position.technologies }}
+  <h6 class="text-heading">Technologies</h6>
+  <p class="tech-inline">{{ delimit . ", " }}</p>
+{{ end }}
+
     {{ end }}
     </div>
 </div>

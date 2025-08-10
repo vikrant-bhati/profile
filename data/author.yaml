@@ -1,0 +1,22 @@
+name: "Vikrant Bhati"
+nickname: "Vikrant"
+greeting: "Hi, I'm"
+subtitle: "Welcome to my personal webpage!"
+designation: Graduate Student at Virginia Tech
+summary:
+  - "I am a Graduate Student at Virginia Tech."
+  - "I am a Machine Learning Engineer."
+  - "I am a Software Developer."
+  - "Always learning new tech."
+  - "Enjoys contributing to open source."
+# image: "../images/screenshot.png"
+socialLinks:
+  - name: Email
+    icon: fas fa-envelope
+    url: mailto:bhati.vikrant@outlook.com
+  - name: GitHub
+    icon: fab fa-github
+    url: https://github.com/vikrant-bhati
+  - name: LinkedIn
+    icon: fab fa-linkedin
+    url: https://www.linkedin.com/in/vikrantbhati/

@@ -3,7 +3,7 @@
   {{ $author = (index site.Data site.Language.Lang).author }}
 {{ end }}
 
-{{ $name:="Jane Doe" }}
+{{ $name:="Vikrant Bhati" }}
 {{ if $author.nickname }}
   {{ $name = $author.nickname }}
 {{ else if $author.name }}
@@ -15,7 +15,7 @@
   {{ $sections = (index site.Data site.Language.Lang).sections }}
 {{ end }}
 
-{{ $backgroundImage:= "/images/default-background.jpg" }}
+{{ $backgroundImage:= "images/default-background.jpg" }}
 {{ if site.Params.background }}
   {{ $backgroundImage = site.Params.background }}
 {{ end }}
@@ -25,7 +25,7 @@
   {{ $darkBackgroundImage = site.Params.darkBackground }}
 {{ end }}
 
-{{ $authorImage:= "/images/default-avatar.png" }}
+{{ $authorImage:= "images/profile.png" }}
 {{ if $author.image }}
   {{ $authorImage = $author.image }}
 {{ end }}
