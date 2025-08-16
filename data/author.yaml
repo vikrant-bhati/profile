@@ -10,6 +10,12 @@ summary:
   - "Always learning new tech."
   - "Enjoys contributing to open source."
 # image: "../images/screenshot.png"
+contactInfo:
+  email: bhati.vikrant@outlook.com
+  address: "Blacksburg, VA, USA"
+  linkedin: /vikrantbhati/
+  github: vikrant-bhati
+
 socialLinks:
   - name: Email
     icon: fas fa-envelope
