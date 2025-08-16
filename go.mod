@@ -1,3 +1,5 @@
-module github.com/hugo-toha/toha/v4
+module github.com/vikrant-bhati/profile
 
 go 1.21
+
+require github.com/hugo-toha/toha/v4 v4.9.0 // indirect
