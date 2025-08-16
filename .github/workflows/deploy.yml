@@ -19,36 +19,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Hugo Modules require Go (for 'hugo mod ...')
+      # Go is required for Hugo Modules
       - uses: actions/setup-go@v5
         with:
           go-version: '1.22'
 
-      # Use a recent extended Hugo (>= 0.146.0)
+      # Install the latest extended Hugo (avoid 404 on missing versions)
       - uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.149.0'
+          hugo-version: 'latest'
           extended: true
 
-      # Install Node packages (for js.Build and Sass imports)
+      # Node for PostCSS/js.Build; install deps declared by your Hugo modules
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-      - name: Install Node dependencies
-        run: |
-          if [ -f package-lock.json ]; then npm ci; 
-          elif [ -f package.json ]; then npm install; 
-          else echo "No package.json found"; fi
 
-      # Pull Hugo modules (theme, etc.)
-      - name: Hugo mod vendor (optional but robust)
+      - name: Install npm packages from Hugo modules
+        run: |
+          hugo mod npm pack
+          npm ci
+
+      # Ensure theme modules are present (and vendor for reproducibility)
+      - name: Fetch and vendor Hugo modules
         run: |
           hugo mod get -u
           hugo mod vendor
 
-      # Build the site with correct baseURL for project pages
-      - name: Build
+      # Build with the correct baseURL for your project page
+      - name: Build site
         run: |
           hugo --minify --baseURL "https://vikrant-bhati.github.io/profile/"
 
