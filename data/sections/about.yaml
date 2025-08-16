@@ -18,13 +18,24 @@ company:
 resume: "files/vikrant-bhati.pdf"
 
 # a summary about you
-summary: "I am a Master’s student in Computer Engineering at Virginia Tech (graduating May 2026), bringing almost seven years of experience to every project. My background spans backend systems, scalable cloud solutions, AI-driven applications, and working with FPGA-based embedded systems. \n
+summary: "I am a Master’s student in Computer Engineering at Virginia Tech (graduating May 2026), with nearly seven years of experience across software development and machine learning. My background covers backend systems, scalable cloud platforms, AI-driven applications, and FPGA-based embedded systems. \n
 
-During my graduate studies, I have worked on a range of projects that combine my software engineering experience with advanced machine learning techniques. Projects include evaluating CNN architectures (ResNet18 variants with attention and ODConv) on ImageNet and Pascal VOC datasets, optimizing large language models using GRPO with Chain-of-Thought reasoning for medical data, and developing generative AI solutions like anime image generation with GANs, all resulting in measurable improvements. I have also developed computer vision applications, such as a gesture-controlled game using MediaPipe and OpenCV.
+During my graduate studies, I have worked on a range of projects that connect my software engineering experience with advanced machine learning techniques, including:
 
-I am currently a Co-op Software Developer at Viavi Solutions (JDSU), where I develop high-performance C++ software for FPGA-based embedded systems that enable real-time data acquisition and processing for advanced network testing. Before starting my master’s, I spent six years at Fiserv, where I worked on designing and building large-scale distributed systems, developing compliance and inventory management microservices, delivering full-stack financial solutions like Card Free Cash, Inventory Management systems, GDPR Guidelines based Contact Service and leading engineering teams. \n
+- Evaluating CNN architectures (ResNet18 variants with attention and ODConv) on ImageNet and Pascal VOC datasets.
 
-I work with Python, Java, C++, and SQL, and have hands-on experience with cloud platforms including GCP, AWS, and Azure, as well as frameworks like TensorFlow, PyTorch, and Spring Boot. I have trained and mentored engineers, initiated high-impact technical projects, and won multiple global hackathons. My goal is to leverage my combined expertise in system-level engineering and AI to deliver innovative, scalable, and impactful solutions." 
+- Optimizing large language models (Qwen 2.5B) using GRPO with Chain-of-Thought reasoning for medical data. 
+
+- Developing generative AI solutions, such as anime image generation with GANs.
+
+- Creating a gesture-controlled version of Asphalt 8, using MediaPipe and OpenCV for finger-based controls.
+
+- Building a recommendation model for Instacart, leveraging EDA and machine learning (XGBoost, Logistic Regression, Decision Trees) to analyze purchasing patterns and improve user experience.
+
+
+I am currently a Co-op Software Developer at Viavi Solutions (JDSU), where I develop high-performance software for FPGA-based embedded systems, enabling real-time data acquisition and processing for advanced network testing. Prior to my master’s, I spent six years at Fiserv, where I designed and built large-scale distributed systems supporting fintech and small-to-medium businesses (SMBs). My key contributions include developing compliance and inventory management microservices, and delivering full-stack financial solutions such as Card Free Cash and GDPR-compliant Contact Services. \n
+
+Beyond my professional roles, I have trained and mentored engineers, led high-impact technical projects, and won multiple global hackathons. My goal is to leverage my combined expertise in system-level engineering and AI to deliver innovative, scalable, and impactful solutions." 
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

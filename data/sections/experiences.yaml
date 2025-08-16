@@ -8,14 +8,15 @@ section:
 
 experiences:
   - company:
-      name: Viavi Solution (former JDSU)
+      logo: images/work/viavi.png
+      name: Viavi Solution (former JDSU Corp.)
       url: "https://www.viavisolutions.com/en-us"
       location: Germantown, MD USA
       overview: "A global leader in network testing, 
       monitoring, and assurance solutions, 
       delivering hardware and software tools that enable high-speed communication networks to operate efficiently and reliably"
     positions:
-      - designation: COOP Software Engineer 
+      - designation: CO-OP Software Engineer 
         start: "2025-05"
         end: "2025-12"
         responsibilities:
@@ -35,6 +36,7 @@ experiences:
 
 
   - company:
+      logo: images/work/vtech.png
       name: Virginia Tech
       url: "https://vt.edu"
       location: Blacksburg, VA USA
@@ -57,12 +59,14 @@ experiences:
       
 
   - company:
+      logo: images/work/fiserv3.png
       name: Fiserv
       url: "https://www.fiserv.com/en.html"
       location: Noida, UP India
       overview: "Fiserv is a global leader in financial technology solutions, and Clover is its point-of-sale and business management platform, offering integrated hardware and software to help merchants process payments, manage inventory, and streamline operations."
     positions:
       - designation: Specialist, Software Development Engineering
+        logo: images/work/clover.png
         start: "2020-04"
         end: "2024-07"
         responsibilities:
