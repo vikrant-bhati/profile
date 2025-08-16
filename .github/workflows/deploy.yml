@@ -1,31 +1,61 @@
-# .github/workflows/deploy.yml
 name: Deploy Hugo site to Pages
+
 on:
   push:
     branches: [ main ]
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: "pages"
   cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # Hugo Modules require Go (for 'hugo mod ...')
       - uses: actions/setup-go@v5
-        with: { go-version: '1.20' }
+        with:
+          go-version: '1.22'
+
+      # Use a recent extended Hugo (>= 0.146.0)
       - uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.128.1'
+          hugo-version: '0.149.0'
           extended: true
+
+      # Install Node packages (for js.Build and Sass imports)
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install Node dependencies
+        run: |
+          if [ -f package-lock.json ]; then npm ci; 
+          elif [ -f package.json ]; then npm install; 
+          else echo "No package.json found"; fi
+
+      # Pull Hugo modules (theme, etc.)
+      - name: Hugo mod vendor (optional but robust)
+        run: |
+          hugo mod get -u
+          hugo mod vendor
+
+      # Build the site with correct baseURL for project pages
       - name: Build
-        run: hugo --minify --baseURL "https://vikrant-bhati.github.io/profile/"
+        run: |
+          hugo --minify --baseURL "https://vikrant-bhati.github.io/profile/"
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
