@@ -13,6 +13,7 @@ const Contact = () => {
   });
   const [status, setStatus] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const resumeLink = "https://vikrant-bhati.github.io/Resume/";
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -87,6 +88,12 @@ const Contact = () => {
                 rel="noreferrer"
               >
                 linkedin.com/in/vikrantbhati
+              </a>
+            </div>
+            <div className="contact__row">
+              <span className="contact__label">📄 Resume</span>
+              <a href={resumeLink} target="_blank" rel="noreferrer">
+                View resume (PDF)
               </a>
             </div>
           </div>
