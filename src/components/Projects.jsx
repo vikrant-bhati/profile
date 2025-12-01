@@ -40,7 +40,7 @@ const projects = [
     tech: ["LLMs", "Chain-of-Thought", "GRPO", "Reinforcement Learning", "LLM as Judge"],
     description:
       "Explored how structured chain-of-thought boosts reasoning quality: built CoT-heavy datasets, compared few-shot vs. self-consistency, and used GRPO/RL with LLM-as-judge feedback to reward correct intermediate steps—improving multi-step answer accuracy and cutting hallucinations.",
-    link: "/public/cs5624-final-project.pdf",
+    link: `${import.meta.env.BASE_URL}cs5624-final-project.pdf`,
     linkLabel: "View report",
   },
   {
