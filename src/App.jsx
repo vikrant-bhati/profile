@@ -5,6 +5,7 @@ import About from "./components/About.jsx";
 import Skills from "./components/Skills.jsx";
 import Experience from "./components/Experience.jsx";
 import Projects from "./components/Projects.jsx";
+import LeadershipAwards from "./components/LeadershipAwards.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -31,6 +32,10 @@ function App() {
 
         <section id="projects" className="section section--alt">
           <Projects />
+        </section>
+
+        <section id="leadership" className="section section--compact">
+          <LeadershipAwards />
         </section>
 
         <section id="contact" className="section section--compact">
