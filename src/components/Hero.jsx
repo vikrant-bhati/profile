@@ -106,7 +106,7 @@ const Hero = () => {
               <span className="hero__status-dot" aria-hidden="true"></span>
               Open to work
             </span>
-            <span>Actively Seeking Full-Time Roles and Internship Opportunities for May'2026</span>
+            <span>Actively Seeking Full-Time Roles for December'2026</span>
           </div>
         </div>
       </div>
