@@ -50,7 +50,7 @@ const Contact = () => {
       } else {
         setStatus({ type: "error", message: "Message failed to send. Please try again." });
       }
-    } catch (err) {
+    } catch {
       setStatus({ type: "error", message: "Network error. Please try again." });
     } finally {
       setIsSubmitting(false);

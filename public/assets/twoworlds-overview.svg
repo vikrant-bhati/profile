@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" fill="none" role="img" aria-labelledby="tw-overview-title tw-overview-desc">
+  <title id="tw-overview-title">TwoWorlds conceptual overview</title>
+  <desc id="tw-overview-desc">An AI agent requests measurements from a hidden scientific world and receives observed evidence. The agent also tests and revises a separate editable approximate simulator, which provides predicted evidence. Comparing the observed and predicted evidence guides further investigation. The scientific domains include geophysics, semiconductor diagnostics, thermal modeling, and battery monitoring. This is a conceptual diagram, not experimental results.</desc>
+  <defs>
+    <marker id="tw-arrow-observed" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1L7 4.5L1 8" stroke="#576475" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="tw-arrow-action" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1L7 4.5L1 8" stroke="#BF5E49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <linearGradient id="tw-agent-surface" x1="463" y1="178" x2="741" y2="418" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#343B45"/>
+      <stop offset="1" stop-color="#202833"/>
+    </linearGradient>
+    <linearGradient id="tw-simulator-surface" x1="859" y1="178" x2="1143" y2="418" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0F4F7"/>
+      <stop offset="1" stop-color="#E9EFF3"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="620" rx="24" fill="#F8F8F3"/>
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+    <text x="56" y="69" fill="#252C36" font-size="38" font-weight="600" letter-spacing="-1">TwoWorlds</text>
+    <text x="56" y="109" fill="#5A6571" font-size="24">Scientific investigation through observed and predicted evidence</text>
+    <path d="M56 137H1144" stroke="#D9DDD9"/>
+
+    <rect x="56" y="174" width="290" height="268" rx="19" fill="#FFFFFF" stroke="#D5DBDC" stroke-width="1.5"/>
+    <text x="81" y="208" fill="#7A8590" font-size="17" font-weight="500" letter-spacing="1.5">HIDDEN SYSTEM</text>
+    <text x="81" y="250" fill="#252C36" font-size="30" font-weight="600" letter-spacing="-.7">Scientific world</text>
+    <rect x="81" y="275" width="240" height="84" rx="10" fill="#F4F5F1" stroke="#D5DAD8" stroke-dasharray="5 6"/>
+    <text x="201" y="309" text-anchor="middle" fill="#65717A" font-size="22">Internal dynamics</text>
+    <text x="201" y="337" text-anchor="middle" fill="#65717A" font-size="22">are not visible</text>
+    <text x="81" y="394" fill="#37444F" font-size="22">Access through</text>
+    <text x="81" y="423" fill="#37444F" font-size="22">measurements</text>
+
+    <rect x="455" y="174" width="290" height="268" rx="19" fill="url(#tw-agent-surface)"/>
+    <text x="480" y="208" fill="#BAC4CF" font-size="17" font-weight="500" letter-spacing="1.5">INVESTIGATOR</text>
+    <text x="480" y="250" fill="#FBF8F0" font-size="30" font-weight="600" letter-spacing="-.7">AI agent</text>
+    <path d="M480 272H720" stroke="#4A535F"/>
+    <circle cx="488" cy="303" r="4" fill="#F29176"/>
+    <text x="505" y="311" fill="#E6EBEF" font-size="22">Choose measurements</text>
+    <circle cx="488" cy="349" r="4" fill="#F29176"/>
+    <text x="505" y="357" fill="#E6EBEF" font-size="22">Test and revise</text>
+    <circle cx="488" cy="395" r="4" fill="#F29176"/>
+    <text x="505" y="403" fill="#E6EBEF" font-size="22">Compare evidence</text>
+
+    <rect x="854" y="174" width="290" height="268" rx="19" fill="url(#tw-simulator-surface)" stroke="#CBD7E0" stroke-width="1.5"/>
+    <text x="879" y="208" fill="#697D90" font-size="17" font-weight="500" letter-spacing="1.5">EDITABLE MODEL</text>
+    <text x="879" y="250" fill="#263A4D" font-size="30" font-weight="600" letter-spacing="-.7">Approximate</text>
+    <text x="879" y="285" fill="#263A4D" font-size="30" font-weight="600" letter-spacing="-.7">simulator</text>
+    <path d="M879 307H1119" stroke="#CDD8E1"/>
+    <text x="879" y="342" fill="#465D70" font-size="22">A separate model</text>
+    <text x="879" y="372" fill="#465D70" font-size="22">the agent can edit,</text>
+    <text x="879" y="402" fill="#465D70" font-size="22">test, and improve</text>
+
+    <text x="400" y="269" text-anchor="middle" fill="#A74D3B" font-size="21" font-weight="500">Measure</text>
+    <path d="M441 286H360" stroke="#BF5E49" stroke-width="2" marker-end="url(#tw-arrow-action)"/>
+    <text x="400" y="340" text-anchor="middle" fill="#576475" font-size="21" font-weight="500">Observed</text>
+    <path d="M360 357H441" stroke="#576475" stroke-width="2" marker-end="url(#tw-arrow-observed)"/>
+
+    <text x="800" y="269" text-anchor="middle" fill="#A74D3B" font-size="21" font-weight="500">Revise</text>
+    <path d="M759 286H840" stroke="#BF5E49" stroke-width="2" marker-end="url(#tw-arrow-action)"/>
+    <text x="800" y="340" text-anchor="middle" fill="#576475" font-size="21" font-weight="500">Predicted</text>
+    <path d="M840 357H759" stroke="#576475" stroke-width="2" marker-end="url(#tw-arrow-observed)"/>
+
+    <path d="M600 444V469" stroke="#AFB9BB" stroke-width="1.5"/>
+    <text x="600" y="503" text-anchor="middle" fill="#354450" font-size="23" font-weight="500">Compare evidence. Guide the next investigation.</text>
+    <text x="600" y="535" text-anchor="middle" fill="#697680" font-size="21">Observed measurements inform new tests and simulator revisions.</text>
+
+    <path d="M56 560H1144" stroke="#D9DDD9"/>
+    <text x="600" y="594" text-anchor="middle" fill="#6D7780" font-size="19">Geophysics · Semiconductor diagnostics · Thermal modeling · Battery monitoring</text>
+  </g>
+</svg>
