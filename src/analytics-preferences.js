@@ -9,6 +9,14 @@ export function initializeAnalyticsPreferences(container, analytics) {
   const status = container.querySelector('#analytics-status');
   const allow = container.querySelector('#analytics-allow');
   const decline = container.querySelector('#analytics-decline');
+  const rootStyle = document.documentElement.style;
+  const previousBarHeight = rootStyle.getPropertyValue('--analytics-bar-height');
+  const previousBarPriority = rootStyle.getPropertyPriority('--analytics-bar-height');
+  function updateBarSpace() {
+    rootStyle.setProperty('--analytics-bar-height', `${panel.hidden ? 0 : panel.getBoundingClientRect().height}px`);
+  }
+  const resizeObserver = new ResizeObserver(updateBarSpace);
+  resizeObserver.observe(panel);
   let choice = null;
   let openedFromSettings = false;
   try {
@@ -23,7 +31,8 @@ export function initializeAnalyticsPreferences(container, analytics) {
     panel.hidden = !visible;
     settings.setAttribute('aria-expanded', String(visible));
     status.textContent = choice === null ? '' : `Your current choice: analytics ${choice ? 'allowed' : 'off'}.`;
-    decline.textContent = choice === true ? 'Turn analytics off' : 'No thanks';
+    decline.textContent = choice === true ? 'Turn off cookies' : 'Reject';
+    updateBarSpace();
   }
   showPreferences(choice === null);
   settings.addEventListener('click', () => {
@@ -59,5 +68,10 @@ export function initializeAnalyticsPreferences(container, analytics) {
     }
   }, { signal });
 
-  return () => controller.abort();
+  return () => {
+    controller.abort();
+    resizeObserver.disconnect();
+    if (previousBarHeight) rootStyle.setProperty('--analytics-bar-height', previousBarHeight, previousBarPriority);
+    else rootStyle.removeProperty('--analytics-bar-height');
+  };
 }

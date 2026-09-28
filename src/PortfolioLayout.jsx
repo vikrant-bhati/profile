@@ -215,8 +215,10 @@ export default function PortfolioLayout() {
     <footer className="contact-section" id="contact"><div className="wrap"><p className="eyebrow">Have something interesting in mind?</p><a className="big-contact" href="mailto:bhati.vikrant@outlook.com">Let’s <em>talk.</em><span>↗</span></a><div className="footer-bottom"><span>Vikrant Bhati · Blacksburg, VA</span><div><a href="https://github.com/vikrant-bhati" target="_blank" rel="noopener">GitHub ↗</a><a href="https://linkedin.com/in/vikrantbhati" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://vikrant-bhati.github.io/Resume/" target="_blank" rel="noopener">Résumé ↗</a><button className="analytics-settings" id="analytics-settings" type="button" aria-controls="analytics-preferences" aria-expanded="false">Privacy &amp; analytics</button><a href="#home">Back to top ↑</a></div></div></div></footer>
   </main>
   <aside className="analytics-preferences" id="analytics-preferences" aria-labelledby="analytics-title" hidden>
-    <h2 id="analytics-title" tabIndex="-1">Optional analytics</h2>
-    <p>I use Google Analytics to understand how visitors find and use this portfolio. Allow analytics cookies?</p>
+    <div className="analytics-bar wrap">
+    <div className="analytics-copy">
+    <h2 className="sr-only" id="analytics-title" tabIndex="-1">Analytics cookies</h2>
+    <p>I use Google Analytics cookies to understand visits to this site.</p>
     <details>
       <summary>Privacy details</summary>
       <p>With your permission, Google receives visit and interaction data, including page views, project opens, link clicks, and browser and device information. Reports may include approximate location and how you reached this site. I use these reports to improve the portfolio.</p>
@@ -224,7 +226,9 @@ export default function PortfolioLayout() {
       <p>See <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">how Google uses data</a>. For privacy questions, <a href="mailto:bhati.vikrant@outlook.com">contact me</a>.</p>
     </details>
     <p className="analytics-status" id="analytics-status" aria-live="polite"></p>
-    <div className="analytics-actions"><button type="button" id="analytics-allow">Allow analytics</button><button type="button" id="analytics-decline">No thanks</button></div>
+    </div>
+    <div className="analytics-actions"><button type="button" id="analytics-allow">Accept cookies</button><button type="button" id="analytics-decline">Reject</button></div>
+    </div>
   </aside>
   <dialog id="project-dialog" aria-labelledby="dialog-title"><div className="dialog-toolbar"><span id="dialog-eyebrow" className="eyebrow">Project details</span><button id="close-dialog" type="button" aria-label="Close project details">Close <span>×</span></button></div><div id="dialog-body"></div></dialog>
     </>
