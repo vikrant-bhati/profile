@@ -1,4 +1,4 @@
-export function initializePortfolio(container, data) {
+export function initializePortfolio(container, data, analytics) {
   const controller = new AbortController();
   const { signal } = controller;
   const root = document.documentElement;
@@ -163,6 +163,7 @@ export function initializePortfolio(container, data) {
     const project = data.projects[id];
     if (!project || disposed) return;
     opener = button;
+    analytics?.trackEvent('project_open', { project_id: id, placement: 'projects' });
     dialogBody.replaceChildren();
     query('#dialog-eyebrow').textContent = project.eyebrow;
     const title = element('h2', '', project.title);
